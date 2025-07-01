@@ -1,0 +1,14 @@
+{
+  "books": {
+    "12345": {
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "reviews": {}
+    },
+    "67890": {
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "reviews": {}
+    }
+  }
+}
