@@ -1,14 +1,25 @@
-const express = require('express');
-const bodyParser = require('body-parser');
+    const express = require('express');
+    const bodyParser = require('body-parser');
+    const cors = require('cors'); // 1. Import the cors package
 
-const bookRoutes = require('./routes/books');
-const userRoutes = require('./routes/users');
+    const bookRoutes = require('./routes/books');
+    const userRoutes = require('./routes/users');
 
-const app = express();
-app.use(bodyParser.json());
+    const app = express();
+    const PORT = 5001; // Or whatever port you are using
 
-app.use('/books', bookRoutes);
-app.use('/users', userRoutes);
+    // --- MIDDLEWARE ---
+    app.use(cors()); // 2. Use the cors middleware
+    app.use(bodyParser.json());
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+    // --- ROUTES ---
+    app.use('/books', bookRoutes);
+    app.use('/users', userRoutes);
+
+
+    // --- START SERVER ---
+    app.listen(PORT, () => {
+        console.log(`Server is running on http://localhost:${PORT}`);
+    });
+    

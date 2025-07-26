@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Review System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Review System</h1>
+
+        <div id="auth-section">
+            <h2>User Authentication</h2>
+            <div id="register-form">
+                <h3>Register</h3>
+                <input type="text" id="register-username" placeholder="Username" required>
+                <input type="password" id="register-password" placeholder="Password" required>
+                <button onclick="registerUser()">Register</button>
+            </div>
+            <div id="login-form">
+                <h3>Login</h3>
+                <input type="text" id="login-username" placeholder="Username" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button onclick="loginUser()">Login</button>
+            </div>
+        </div>
+
+        <div id="books-section">
+            <h2>All Books</h2>
+            <div id="search-section">
+                <input type="text" id="search-input" placeholder="Search by ISBN, Author, or Title">
+                <button onclick="searchBooks()">Search</button>
+                <button onclick="fetchAllBooks()">Show All Books</button>
+            </div>
+            <div id="books-list"></div>
+        </div>
+
+        <div id="book-details-section" style="display:none;">
+            <h2 id="book-title"></h2>
+            <p><strong>Author:</strong> <span id="book-author"></span></p>
+            <p><strong>ISBN:</strong> <span id="book-isbn"></span></p>
+
+            <h3>Reviews</h3>
+            <div id="reviews-list"></div>
+
+            <div id="add-review-form">
+                <h3>Add a Review</h3>
+                <textarea id="review-text" placeholder="Write your review here..."></textarea>
+                <button onclick="addReview()">Submit Review</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

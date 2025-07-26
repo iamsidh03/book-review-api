@@ -3,7 +3,7 @@
     "12345": {
       "title": "The Alchemist",
       "author": "Paulo Coelho",
-      "reviews": {}
+      "reviews": {"user1": "Amazing book!", "user2": "A must-read."}
     },
     "67890": {
       "title": "Atomic Habits",
