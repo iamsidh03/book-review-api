@@ -1,10 +1,10 @@
-# 📚 Online Book Review Application – Node.js & Express.js
+#  Online Book Review Application – Node.js & Express.js
 
 This is a RESTful API server for a fictional online book review system. Users can register, log in, search for books by ISBN, author, or title, and manage book reviews.
 
 ---
 
-## 🔧 Technologies
+##  Technologies
 - Node.js
 - Express.js
 - JSON Web Tokens (JWT)
@@ -13,7 +13,7 @@ This is a RESTful API server for a fictional online book review system. Users ca
 
 ---
 
-## 🛠 How to Run
+##  How to Run
 
 ```bash
 git clone https://github.com/yourusername/book-review-app.git
